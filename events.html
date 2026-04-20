@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>جميع الفعاليات - دليل الجامعة</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body class="bg-gray-50 min-h-screen">
+
+    <!-- Navbar -->
+    <nav class="bg-white shadow-lg sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex justify-between items-center py-4">
+                <div class="flex items-center gap-3">
+                    <div class="w-10 h-10 bg-gradient-to-r from-blue-500 to-purple-600 rounded-xl flex items-center justify-center">
+                        <i class="fas fa-graduation-cap text-white text-xl"></i>
+                    </div>
+                    <span class="text-xl font-bold text-gray-800">دليل الفعاليات</span>
+                </div>
+
+                <div class="hidden md:flex gap-6">
+                    <a href="index.html" class="text-gray-700 hover:text-blue-600 font-medium">الرئيسية</a>
+                    <a href="events.html" class="text-blue-600 font-bold border-b-2 border-blue-600 pb-1">الفعاليات</a>
+                    <a href="about.html" class="text-gray-700 hover:text-blue-600 font-medium">عن الدليل</a>
+                    <a href="contact.html" class="text-gray-700 hover:text-blue-600 font-medium">اتصل بنا</a>
+                    <a href="admin/login.html" class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700">لوحة التحكم</a>
+                </div>
+
+                <button id="mobile-menu-btn" class="md:hidden p-2">
+                    <i class="fas fa-bars text-2xl text-gray-700"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <div class="max-w-7xl mx-auto px-4 py-12">
+
+        <!-- Header -->
+        <div class="text-center mb-12">
+            <h1 class="text-4xl md:text-5xl font-bold bg-gradient-to-r from-gray-800 to-gray-600 bg-clip-text text-transparent mb-4">
+                جميع الفعاليات
+            </h1>
+            <p class="text-xl text-gray-600">اكتشف أحدث الفعاليات الجامعية</p>
+        </div>
+
+        <!-- Filter Bar -->
+        <div class="bg-white rounded-2xl shadow-lg p-6 mb-10 border border-gray-100">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-4 items-end">
+
+                <!-- Search -->
+                <div class="relative md:col-span-2">
+                    <i class="fas fa-search absolute right-4 top-1/2 -translate-y-1/2 text-gray-400"></i>
+                    <input type="text" id="search-input" placeholder="ابحث عن فعالية..."
+                           class="w-full pl-12 pr-4 py-3 border border-gray-200 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent transition">
+                </div>
+
+                <!-- Category Filter -->
+                <select id="category-filter" class="w-full p-3 border border-gray-200 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                    <option value="">الكل التصنيفات</option>
+                    <option value="ثقافة">ثقافة</option>
+                    <option value="رياضة">رياضة</option>
+                    <option value="موسيقى">موسيقى</option>
+                    <option value="عائلي">عائلي</option>
+                    <option value="تعليم">تعليم</option>
+                    <option value="فن">فن</option>
+                </select>
+
+                <!-- Reset Button -->
+                <button id="reset-filter" class="bg-blue-600 text-white px-6 py-3 rounded-xl hover:bg-blue-700 transition font-medium">
+                    إعادة تعيين
+                </button>
+            </div>
+        </div>
+
+        <!-- Events Grid -->
+        <div id="events-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"></div>
+
+        <!-- Empty -->
+        <div id="empty-state" class="text-center py-20 hidden">
+            <i class="fas fa-calendar-times text-6xl text-gray-300 mb-6"></i>
+            <h3 class="text-2xl font-bold text-gray-700 mb-2">لا توجد فعاليات</h3>
+            <p class="text-gray-600">لا توجد فعاليات مطابقة لمعايير البحث</p>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white mt-20 pt-12 pb-8">
+        <div class="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-8">
+
+            <div>
+                <div class="flex items-center gap-3 mb-4">
+                    <div class="w-10 h-10 bg-gradient-to-r from-blue-500 to-purple-600 rounded-xl flex items-center justify-center">
+                        <i class="fas fa-graduation-cap text-white"></i>
+                    </div>
+                    <span class="text-xl font-bold">دليل الفعاليات</span>
+                </div>
+                <p class="text-gray-400">منصة شاملة لعرض وإدارة فعاليات الجامعة الافتراضية</p>
+            </div>
+
+            <div>
+                <h4 class="font-bold mb-4">روابط سريعة</h4>
+                <ul class="space-y-2 text-gray-400">
+                    <li><a href="index.html" class="hover:text-white transition">الرئيسية</a></li>
+                    <li><a href="events.html" class="hover:text-white transition">الفعاليات</a></li>
+                    <li><a href="about.html" class="hover:text-white transition">عن الدليل</a></li>
+                    <li><a href="contact.html" class="hover:text-white transition">اتصل بنا</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4 class="font-bold mb-4">تواصل معنا</h4>
+                <div class="space-y-2 text-gray-400">
+                    <div class="flex items-center gap-3">
+                        <i class="fas fa-map-marker-alt text-red-400"></i>
+                        أوتستراد المزة، G759+HJM — دمشق، الجمهورية العربية السورية
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <i class="fas fa-phone text-green-400"></i>
+                        +963 11 2113469
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <i class="fas fa-envelope text-blue-400"></i>
+                        info@svuonline.org
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+            © 2025 دليل فعاليات الجامعة. جميع الحقوق محفوظة.
+        </div>
+    </footer>
+
+    <script>
+        const eventsData = [
+            {
+                id: 1,
+                title: "ندوة التراث الثقافي",
+                description: "ندوة تستعرض التراث الثقافي العربي وأهميته في بناء هوية الجيل الحديث.",
+                category: "ثقافة",
+                event_date: "2026-05-03",
+                location: "قاعة الاحتفالات",
+                image: "https://images.unsplash.com/photo-1529101091764-c3526daf38fe?w=400&h=250&fit=crop"
+            },
+            {
+                id: 2,
+                title: "بطولة كرة القدم الجامعية",
+                description: "بطولة رياضية تضم أفضل الفرق الجامعية في منافسة قوية ومثيرة.",
+                category: "رياضة",
+                event_date: "2026-05-08",
+                location: "ملعب الجامعة الرياضي",
+                image: "https://images.unsplash.com/photo-1543351613-ac6b2a890c88?w=400&h=250&fit=crop"
+            },
+            {
+                id: 3,
+                title: "حفل الموسيقى الكلاسيكية",
+                description: "أمسية موسيقية رائعة يقدمها أوركسترا الجامعة بأعمال كلاسيكية عالمية.",
+                category: "موسيقى",
+                event_date: "2026-05-10",
+                location: "المسرح الجامعي",
+                image: "https://images.unsplash.com/photo-1574676307624-bbf1b0f683c9?w=400&h=250&fit=crop"
+            },
+            {
+                id: 4,
+                title: "يوم العائلة الجامعي",
+                description: "فعالية ممتعة تشمل ألعاباً وفقرات ترفيهية وعروضاً مسرحية.",
+                category: "عائلي",
+                event_date: "2026-05-12",
+                location: "الحديقة المركزية بالجامعة",
+                image: "https://images.unsplash.com/photo-1508609349937-5ec4ae374ebf?w=400&h=250&fit=crop"
+            },
+            {
+                id: 5,
+                title: "معرض الفنون التشكيلية",
+                description: "معرض سنوي يضم أعمال طلاب كلية الفنون الجميلة من رسم ونحت وتصوير فوتوغرافي.",
+                category: "فن",
+                event_date: "2026-05-15",
+                location: "معرض الجامعة للفنون",
+                image: "https://images.unsplash.com/photo-1504196606672-aef5c9cefc92?w=400&h=250&fit=crop"
+            },
+            {
+                id: 6,
+                title: "محاضرة: مستقبل الذكاء الاصطناعي في التعليم",
+                description: "محاضرة تفاعلية تناقش تأثير الذكاء الاصطناعي على مستقبل التعليم الجامعي وكيفية الاستفادة منه.",
+                category: "تعليم",
+                event_date: "2026-05-18",
+                location: "قاعة المؤتمرات الكبرى",
+                image: "https://images.unsplash.com/photo-1552664730-d307ca884978?w=400&h=250&fit=crop"
+            }
+        ];
+
+        /* قراءة التصنيف من الرابط */
+        const urlParams = new URLSearchParams(window.location.search);
+        const selectedCategory = urlParams.get("category");
+
+        if (selectedCategory) {
+            document.getElementById("category-filter").value = selectedCategory;
+        }
+
+        /* دالة عرض الفعاليات */
+        function renderEvents() {
+            const container = document.getElementById("events-container");
+            const searchValue = document.getElementById("search-input").value.trim();
+            const categoryValue = document.getElementById("category-filter").value;
+
+            let filtered = eventsData;
+
+            if (categoryValue) {
+                filtered = filtered.filter(e => e.category === categoryValue);
+            }
+
+            if (searchValue) {
+                filtered = filtered.filter(e =>
+                    e.title.includes(searchValue) ||
+                    e.description.includes(searchValue)
+                );
+            }
+
+            container.innerHTML = "";
+
+            if (filtered.length === 0) {
+                document.getElementById("empty-state").classList.remove("hidden");
+                return;
+            } else {
+                document.getElementById("empty-state").classList.add("hidden");
+            }
+
+            filtered.forEach(event => {
+                container.innerHTML += `
+                    <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+                        <img src="${event.image}" class="h-48 w-full object-cover">
+                        <div class="p-4">
+                            <span class="inline-block bg-blue-100 text-blue-700 text-xs px-2 py-1 rounded mb-2">${event.category}</span>
+                            <h3 class="font-bold text-lg mb-2">${event.title}</h3>
+                            <p class="text-gray-600 text-sm mb-3">${event.description}</p>
+                            <div class="flex justify-between text-xs text-gray-500 mb-3">
+                                <span>📅 ${event.event_date}</span>
+                                <span>📍 ${event.location}</span>
+                            </div>
+                            <a href="event.html?id=${event.id}" class="block bg-blue-600 text-white text-center py-2 rounded hover:bg-blue-700 transition">عرض التفاصيل</a>
+                        </div>
+                    </div>
+                `;
+            });
+        }
+
+        renderEvents();
+
+        document.getElementById("category-filter").addEventListener("change", renderEvents);
+        document.getElementById("search-input").addEventListener("input", renderEvents);
+
+        document.getElementById("reset-filter").addEventListener("click", () => {
+            document.getElementById("search-input").value = "";
+            document.getElementById("category-filter").value = "";
+            renderEvents();
+        });
+    </script>
+
+</body>
+</html>
