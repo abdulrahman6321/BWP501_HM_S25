@@ -13,11 +13,17 @@
 
   <!-- Navbar -->
   <nav class="bg-black text-white shadow-md sticky top-0 z-50">
-    <div class="max-w-7xl mx-auto px-6 flex items-center justify-between h-14">
-      <a href="index.html" class="text-lg font-bold flex items-center space-x-2">
+    <div class="max-w-7xl mx-auto px-6 flex items-center justify-between h-14 relative">
+
+      <!-- شعار الجامعة -->
+      <img src="https://raw.githubusercontent.com/abdulrahman6321/BWP501_HM_S25/refs/heads/main/capture_20260424205820493(1).bmp"
+           class="absolute right-4 top-2 w-10 h-10 hidden md:block rounded-full" />
+
+      <a href="index.html" class="text-lg font-bold flex items-center space-x-2 space-x-reverse">
         <i class="fas fa-graduation-cap text-2xl"></i>
         <span>دليل فعاليات الجامعة</span>
       </a>
+
       <ul class="hidden md:flex space-x-6 space-x-reverse">
         <li><a href="index.html" class="border-b-2 border-white font-semibold">الرئيسية</a></li>
         <li><a href="events.html" class="hover:text-gray-300">الفعاليات</a></li>
@@ -25,6 +31,7 @@
         <li><a href="contact.html" class="hover:text-gray-300">اتصل بنا</a></li>
         <li><a href="admin/login.html" class="bg-white text-black px-3 py-1 rounded">لوحة التحكم</a></li>
       </ul>
+
       <button id="mobile-menu-btn" class="md:hidden p-2">
         <i class="fas fa-bars text-white text-2xl"></i>
       </button>
@@ -33,38 +40,51 @@
 
   <main class="max-w-7xl mx-auto px-6 py-12">
 
-    <!-- سلايدر الصور -->
+    <!-- سلايدر البنرات الرئيسية -->
     <div class="relative w-full h-72 md:h-96 overflow-hidden rounded-xl shadow-lg mb-12">
 
-      <!-- الشريحة 1 -->
+      <!-- الشريحة 1 — بطولة كرة القدم -->
       <div class="slide absolute inset-0 transition-opacity duration-700 opacity-100">
-        <img src="https://images.unsplash.com/photo-1543351613-ac6b2a890c88?w=1200" class="w-full h-full object-cover" />
+        <img src="https://raw.githubusercontent.com/abdulrahman6321/BWP501_HM_S25/refs/heads/main/بطولة%20كرة%20القدم%20الجامعية%20.jpeg"
+             class="w-full h-full object-cover" />
         <div class="absolute inset-0 bg-black bg-opacity-40 flex flex-col justify-center items-start px-8 md:px-16 text-white">
           <h2 class="text-2xl md:text-4xl font-bold mb-3">بطولة كرة القدم الجامعية</h2>
-          <p class="text-sm md:text-lg mb-4">بطولة كرة القدم السنوية بين الأقسام الجامعية المختلفة. تعال وشجع فريقك!</p>
+          <p class="text-sm md:text-lg mb-4">منافسة قوية بين أفضل الفرق الجامعية في أجواء حماسية.</p>
           <a href="event.html?id=4" class="bg-white text-black px-5 py-2 rounded font-semibold hover:bg-gray-200 transition">عرض التفاصيل</a>
         </div>
       </div>
 
-      <!-- الشريحة 2 -->
+      <!-- الشريحة 2 — حفل الموسيقى الكلاسيكية -->
       <div class="slide absolute inset-0 transition-opacity duration-700 opacity-0">
-        <img src="https://images.unsplash.com/photo-1574676307624-bbf1b0f683c9?w=1200" class="w-full h-full object-cover" />
+        <img src="https://raw.githubusercontent.com/abdulrahman6321/BWP501_HM_S25/refs/heads/main/حفل%20الموسيقى%20الكلاسيكية%20البنر%20الرئيسي.jpeg"
+             class="w-full h-full object-cover" />
         <div class="absolute inset-0 bg-black bg-opacity-40 flex flex-col justify-center items-start px-8 md:px-16 text-white">
           <h2 class="text-2xl md:text-4xl font-bold mb-3">حفل الموسيقى الكلاسيكية</h2>
-          <p class="text-sm md:text-lg mb-4">أمسية موسيقية رائعة يقدمها أوركسترا الجامعة بأعمال كلاسيكية عالمية.</p>
+          <p class="text-sm md:text-lg mb-4">أمسية موسيقية يقدمها أوركسترا الجامعة بأعمال عالمية.</p>
           <a href="event.html?id=1" class="bg-white text-black px-5 py-2 rounded font-semibold hover:bg-gray-200 transition">عرض التفاصيل</a>
         </div>
       </div>
 
-      <!-- الشريحة 3 -->
+      <!-- الشريحة 3 — محاضرة الذكاء الاصطناعي -->
       <div class="slide absolute inset-0 transition-opacity duration-700 opacity-0">
-        <img src="https://images.unsplash.com/photo-1529101091764-c3526daf38fe?w=1200" class="w-full h-full object-cover" />
+        <img src="https://raw.githubusercontent.com/abdulrahman6321/BWP501_HM_S25/refs/heads/main/محاضرة%20مستقبل%20الذكاء%20الاصطناعي%20في%20التعليم%20.jpeg"
+             class="w-full h-full object-cover" />
         <div class="absolute inset-0 bg-black bg-opacity-40 flex flex-col justify-center items-start px-8 md:px-16 text-white">
-          <h2 class="text-2xl md:text-4xl font-bold mb-3">ندوة التراث الثقافي</h2>
-          <p class="text-sm md:text-lg mb-4">ندوة تستعرض التراث الثقافي العربي وأهميته في بناء هوية الجيل الحديث.</p>
-          <a href="event.html?id=3" class="bg-white text-black px-5 py-2 rounded font-semibold hover:bg-gray-200 transition">عرض التفاصيل</a>
+          <h2 class="text-2xl md:text-4xl font-bold mb-3">محاضرة مستقبل الذكاء الاصطناعي</h2>
+          <p class="text-sm md:text-lg mb-4">نقاش حول تأثير الذكاء الاصطناعي على التعليم الجامعي.</p>
+          <a href="event.html?id=6" class="bg-white text-black px-5 py-2 rounded font-semibold hover:bg-gray-200 transition">عرض التفاصيل</a>
         </div>
       </div>
+
+      <!-- زر السهم اليسار -->
+      <button id="prevSlide" class="absolute left-3 top-1/2 -translate-y-1/2 bg-black bg-opacity-40 text-white p-3 rounded-full hover:bg-opacity-60">
+        <i class="fas fa-chevron-right"></i>
+      </button>
+
+      <!-- زر السهم اليمين -->
+      <button id="nextSlide" class="absolute right-3 top-1/2 -translate-y-1/2 bg-black bg-opacity-40 text-white p-3 rounded-full hover:bg-opacity-60">
+        <i class="fas fa-chevron-left"></i>
+      </button>
 
     </div>
 
@@ -78,10 +98,20 @@
         });
       }
 
+      document.getElementById("nextSlide").onclick = () => {
+        currentSlide = (currentSlide + 1) % slides.length;
+        showSlide(currentSlide);
+      };
+
+      document.getElementById("prevSlide").onclick = () => {
+        currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+        showSlide(currentSlide);
+      };
+
       setInterval(() => {
         currentSlide = (currentSlide + 1) % slides.length;
         showSlide(currentSlide);
-      }, 4000);
+      }, 5000);
     </script>
 
     <!-- التصنيفات -->
@@ -152,13 +182,13 @@
 
       <div>
         <h4 class="font-semibold mb-4">تواصل معنا</h4>
-        <p><i class="fas fa-map-marker-alt text-red-500"></i> أوتستراد المزة، G759+HJM — دمشق، الجمهورية العربية السورية</p>
+        <p><i class="fas fa-map-marker-alt text-red-500"></i> أوتستراد المزة، دمشق، سوريا</p>
         <p class="mt-2"><i class="fas fa-phone-alt text-green-500"></i> +963 11 2113469</p>
         <p class="mt-2"><i class="fas fa-envelope text-blue-500"></i> info@svuonline.org</p>
       </div>
     </div>
 
-    <div class="text-center text-gray-500 mt-6">©️ 2025 دليل فعاليات الجامعة. جميع الحقوق محفوظة.</div>
+    <div class="text-center text-gray-500 mt-6">©️ 2026 دليل فعاليات الجامعة. جميع الحقوق محفوظة.</div>
   </footer>
 
   <script>
@@ -170,7 +200,7 @@
         category: "موسيقى",
         event_date: "2026-06-01",
         location: "المسرح الجامعي",
-        image: "https://images.unsplash.com/photo-1574676307624-bbf1b0f683c9?w=400&h=250&fit=crop"
+        image: "https://raw.githubusercontent.com/abdulrahman6321/BWP501_HM_S25/refs/heads/main/حفل%20الموسيقى%20الكلاسيكية.jpeg"
       },
       {
         id: 2,
@@ -179,7 +209,7 @@
         category: "عائلي",
         event_date: "2026-06-10",
         location: "الحديقة المركزية بالجامعة",
-        image: "https://images.unsplash.com/photo-1508609349937-5ec4ae374ebf?w=400&h=250&fit=crop"
+        image: "https://raw.githubusercontent.com/abdulrahman6321/BWP501_HM_S25/refs/heads/main/يوم%20العائلة%20الجامعي.jpeg"
       },
       {
         id: 3,
@@ -188,7 +218,7 @@
         category: "ثقافة",
         event_date: "2026-06-20",
         location: "قاعة الاحتفالات",
-        image: "https://images.unsplash.com/photo-1529101091764-c3526daf38fe?w=400&h=250&fit=crop"
+        image: "https://raw.githubusercontent.com/abdulrahman6321/BWP501_HM_S25/refs/heads/main/ندوة%20التراث%20الثقافي.jpeg"
       },
       {
         id: 4,
@@ -197,7 +227,7 @@
         category: "رياضة",
         event_date: "2026-06-25",
         location: "ملعب الجامعة الرياضي",
-        image: "https://images.unsplash.com/photo-1543351613-ac6b2a890c88?w=400&h=250&fit=crop"
+        image: "https://raw.githubusercontent.com/abdulrahman6321/BWP501_HM_S25/refs/heads/main/بطولة%20كرة%20القدم%20الجامعية%20.jpeg"
       },
       {
         id: 5,
@@ -206,7 +236,7 @@
         category: "فن",
         event_date: "2026-07-05",
         location: "معرض الجامعة للفنون",
-        image: "https://images.unsplash.com/photo-1504196606672-aef5c9cefc92?w=400&h=250&fit=crop"
+        image: "https://raw.githubusercontent.com/abdulrahman6321/BWP501_HM_S25/refs/heads/main/حفل%20الموسيقى%20الكلاسيكية.jpeg"
       },
       {
         id: 6,
@@ -215,7 +245,7 @@
         category: "تعليم",
         event_date: "2026-07-15",
         location: "قاعة المؤتمرات الكبرى",
-        image: "https://images.unsplash.com/photo-1552664730-d307ca884978?w=400&h=250&fit=crop"
+        image: "https://raw.githubusercontent.com/abdulrahman6321/BWP501_HM_S25/refs/heads/main/محاضرة%20مستقبل%20الذكاء%20الاصطناعي%20في%20التعليم%20.jpeg"
       }
     ];
 
