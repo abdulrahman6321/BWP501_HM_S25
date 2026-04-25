@@ -10,12 +10,32 @@
 </head>
 
 <body class="bg-gray-50 text-gray-900 min-h-screen">
+
+  <!-- Navbar -->
+  <nav class="bg-white shadow-md sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+      <div class="flex items-center gap-3">
+        <div class="w-10 h-10 bg-gradient-to-r from-blue-500 to-purple-600 rounded-xl flex items-center justify-center">
+          <i class="fas fa-graduation-cap text-white text-xl"></i>
+        </div>
+        <span class="text-xl font-bold text-gray-800">دليل الفعاليات</span>
+      </div>
+
+      <div class="hidden md:flex gap-6">
+        <a href="index.html" class="hover:text-blue-600">الرئيسية</a>
+        <a href="events.html" class="hover:text-blue-600">الفعاليات</a>
+        <a href="about.html" class="text-blue-600 font-bold border-b-2 border-blue-600 pb-1">عن الدليل</a>
+        <a href="contact.html" class="hover:text-blue-600">اتصل بنا</a>
+      </div>
+    </div>
+  </nav>
+
   <div class="max-w-5xl mx-auto px-4 py-12">
 
     <!-- About Section -->
     <section class="text-center mb-16">
-      <h1 class="text-4xl font-bold mb-4 text-foreground">عن دليل الفعاليات</h1>
-      <p class="text-muted-foreground text-lg max-w-2xl mx-auto">
+      <h1 class="text-4xl font-bold mb-4 text-gray-800">عن دليل الفعاليات</h1>
+      <p class="text-gray-600 text-lg max-w-2xl mx-auto">
         دليل فعاليات الجامعة الافتراضية هو منصة شاملة تهدف إلى توفير معلومات دقيقة وسريعة عن جميع الفعاليات والأنشطة الجامعية، وتسهيل التواصل بين الطلاب والإدارة.
       </p>
     </section>
@@ -24,77 +44,82 @@
     <section class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">
       <div class="bg-white rounded-xl p-6 shadow text-center">
         <div class="text-4xl mb-3">💡</div>
-        <h3 class="font-bold text-lg mb-2 text-foreground">قيمنا</h3>
-        <p class="text-muted-foreground text-sm">التميز الشمولية، الشفافية، والابتكار في خدمة المجتمع الجامعي.</p>
+        <h3 class="font-bold text-lg mb-2 text-gray-800">قيمنا</h3>
+        <p class="text-gray-600 text-sm">التميز، الشمولية، الشفافية، والابتكار في خدمة المجتمع الجامعي.</p>
       </div>
       <div class="bg-white rounded-xl p-6 shadow text-center">
         <div class="text-4xl mb-3">🚀</div>
-        <h3 class="font-bold text-lg mb-2 text-foreground">مهمتنا</h3>
-        <p class="text-muted-foreground text-sm">تقديم منصة سهلة وشفافة تربط الطلاب بالفعاليات التي تثري تجربتهم.</p>
+        <h3 class="font-bold text-lg mb-2 text-gray-800">مهمتنا</h3>
+        <p class="text-gray-600 text-sm">تقديم منصة سهلة وشفافة تربط الطلاب بالفعاليات التي تثري تجربتهم.</p>
       </div>
       <div class="bg-white rounded-xl p-6 shadow text-center">
         <div class="text-4xl mb-3">🎯</div>
-        <h3 class="font-bold text-lg mb-2 text-foreground">رؤيتنا</h3>
-        <p class="text-muted-foreground text-sm">أن نكون المرجع الأول لكل فعالية جامعية في العالم الافتراضي.</p>
+        <h3 class="font-bold text-lg mb-2 text-gray-800">رؤيتنا</h3>
+        <p class="text-gray-600 text-sm">أن نكون المرجع الأول لكل فعالية جامعية في العالم الافتراضي.</p>
       </div>
     </section>
 
     <!-- Team -->
     <section class="mb-16">
-      <h2 class="text-2xl font-bold mb-8 text-foreground text-center">فريق المشروع</h2>
+      <h2 class="text-2xl font-bold mb-8 text-center text-gray-800">فريق المشروع</h2>
+
       <div class="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-5 gap-6 justify-center">
-        <!-- Team member 1 -->
+
+        <!-- 1) عبد الرحمن برغل -->
         <div class="bg-white rounded-xl p-6 shadow text-center">
-          <div class="w-20 h-20 rounded-full bg-gray-200 flex items-center justify-center text-3xl mx-auto mb-4">
-            <i class="fas fa-user text-gray-400"></i>
-          </div>
-          <h3 class="font-bold text-foreground">___________</h3>
-          <p class="text-sm text-muted-foreground">ID: ___________</p>
-          <span class="inline-block mt-2 bg-gray-100 text-gray-700 text-xs px-3 py-1 rounded-full">مطور</span>
+          <img src="https://cdn-icons-png.flaticon.com/512/149/149071.png"
+            class="w-20 h-20 rounded-full mx-auto mb-4" />
+          <h3 class="font-bold text-gray-800">عبد الرحمن برغل</h3>
+          <p class="text-sm text-gray-600">ID: abdulrahman_188667</p>
+          <span class="inline-block mt-2 bg-blue-100 text-blue-700 text-xs px-3 py-1 rounded-full">Frontend Developer</span>
         </div>
-        <!-- Team member 2 -->
+
+        <!-- 2) عبد الرحيم الطحان -->
         <div class="bg-white rounded-xl p-6 shadow text-center">
-          <div class="w-20 h-20 rounded-full bg-gray-200 flex items-center justify-center text-3xl mx-auto mb-4">
-            <i class="fas fa-user text-gray-400"></i>
-          </div>
-          <h3 class="font-bold text-foreground">___________</h3>
-          <p class="text-sm text-muted-foreground">ID: ___________</p>
-          <span class="inline-block mt-2 bg-gray-100 text-gray-700 text-xs px-3 py-1 rounded-full">مطور</span>
+          <img src="https://cdn-icons-png.flaticon.com/512/149/149071.png"
+            class="w-20 h-20 rounded-full mx-auto mb-4" />
+          <h3 class="font-bold text-gray-800">عبد الرحيم الطحان</h3>
+          <p class="text-sm text-gray-600">ID: abdulraheem_297079</p>
+          <span class="inline-block mt-2 bg-blue-100 text-blue-700 text-xs px-3 py-1 rounded-full">Frontend Developer</span>
         </div>
-        <!-- Team member 3 -->
+
+        <!-- 3) راما فتال -->
         <div class="bg-white rounded-xl p-6 shadow text-center">
-          <div class="w-20 h-20 rounded-full bg-gray-200 flex items-center justify-center text-3xl mx-auto mb-4">
-            <i class="fas fa-user text-gray-400"></i>
-          </div>
-          <h3 class="font-bold text-foreground">___________</h3>
-          <p class="text-sm text-muted-foreground">ID: ___________</p>
-          <span class="inline-block mt-2 bg-gray-100 text-gray-700 text-xs px-3 py-1 rounded-full">مطور</span>
+          <img src="https://cdn-icons-png.flaticon.com/512/149/149071.png"
+            class="w-20 h-20 rounded-full mx-auto mb-4" />
+          <h3 class="font-bold text-gray-800">راما فتال</h3>
+          <p class="text-sm text-gray-600">ID: rama_215405</p>
+          <span class="inline-block mt-2 bg-purple-100 text-purple-700 text-xs px-3 py-1 rounded-full">Backend Developer</span>
         </div>
-        <!-- Team member 4 -->
+
+        <!-- 4) رهام نمر -->
+     <div class="bg-white rounded-xl p-6 shadow text-center">
+  <img src="https://cdn-icons-png.flaticon.com/512/149/149071.png"
+    class="w-20 h-20 rounded-full mx-auto mb-4" />
+  <h3 class="font-bold text-gray-800">رهام نمر</h3>
+  <p class="text-sm text-gray-600">ID: Riham_121436</p>
+  <span class="inline-block mt-2 bg-purple-100 text-purple-700 text-xs px-3 py-1 rounded-full">
+    Backend Developer
+  </span>
+</div>
+
+
+        <!-- 5) محمد رويد الجاجة -->
         <div class="bg-white rounded-xl p-6 shadow text-center">
-          <div class="w-20 h-20 rounded-full bg-gray-200 flex items-center justify-center text-3xl mx-auto mb-4">
-            <i class="fas fa-user text-gray-400"></i>
-          </div>
-          <h3 class="font-bold text-foreground">___________</h3>
-          <p class="text-sm text-muted-foreground">ID: ___________</p>
-          <span class="inline-block mt-2 bg-gray-100 text-gray-700 text-xs px-3 py-1 rounded-full">مطور</span>
+          <img src="https://cdn-icons-png.flaticon.com/512/149/149071.png"
+            class="w-20 h-20 rounded-full mx-auto mb-4" />
+          <h3 class="font-bold text-gray-800">محمد رويد الجاجة</h3>
+          <p class="text-sm text-gray-600">ID: roed_122302</p>
+          <span class="inline-block mt-2 bg-green-100 text-green-700 text-xs px-3 py-1 rounded-full">Database Developer / MySQL Specialist</span>
         </div>
-        <!-- Team member 5 -->
-        <div class="bg-white rounded-xl p-6 shadow text-center">
-          <div class="w-20 h-20 rounded-full bg-gray-200 flex items-center justify-center text-3xl mx-auto mb-4">
-            <i class="fas fa-user text-gray-400"></i>
-          </div>
-          <h3 class="font-bold text-foreground">___________</h3>
-          <p class="text-sm text-muted-foreground">ID: ___________</p>
-          <span class="inline-block mt-2 bg-gray-100 text-gray-700 text-xs px-3 py-1 rounded-full">مطور</span>
-        </div>
+
       </div>
     </section>
 
     <!-- Policies -->
     <section class="bg-white rounded-xl p-8 shadow">
-      <h2 class="text-2xl font-bold mb-4 text-foreground">سياسات تقديم الفعاليات</h2>
-      <ul class="list-disc list-inside space-y-2 text-muted-foreground">
+      <h2 class="text-2xl font-bold mb-4 text-gray-800">سياسات تقديم الفعاليات</h2>
+      <ul class="list-disc list-inside space-y-2 text-gray-600">
         <li>يجب أن تكون الفعالية مرتبطة بالنشاط الجامعي.</li>
         <li>يتم مراجعة الفعاليات المقدمة خلال 48 ساعة.</li>
         <li>يجب تقديم معلومات دقيقة وكاملة عند إضافة فعالية.</li>
@@ -103,6 +128,39 @@
     </section>
 
   </div>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-white py-8 mt-20">
+    <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-6">
+      <div>
+        <div class="flex items-center gap-2 mb-4">
+          <i class="fas fa-graduation-cap text-2xl"></i>
+          <span class="text-xl font-semibold">دليل الفعاليات</span>
+        </div>
+        <p class="text-gray-400">منصة شاملة لعرض وإدارة فعاليات الجامعة الافتراضية</p>
+      </div>
+
+      <div>
+        <h4 class="font-semibold mb-4">روابط سريعة</h4>
+        <ul class="space-y-2 text-gray-400">
+          <li><a href="index.html" class="hover:text-white">الرئيسية</a></li>
+          <li><a href="events.html" class="hover:text-white">الفعاليات</a></li>
+          <li><a href="about.html" class="hover:text-white">عن الدليل</a></li>
+          <li><a href="contact.html" class="hover:text-white">اتصل بنا</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="font-semibold mb-4">تواصل معنا</h4>
+        <p><i class="fas fa-map-marker-alt text-red-500"></i> أوتستراد المزة — دمشق، سوريا</p>
+        <p class="mt-2"><i class="fas fa-phone-alt text-green-500"></i> +963 11 2113469</p>
+        <p class="mt-2"><i class="fas fa-envelope text-blue-500"></i> info@svuonline.org</p>
+      </div>
+    </div>
+
+    <div class="text-center text-gray-500 mt-6">©️ 2025 دليل فعاليات الجامعة. جميع الحقوق محفوظة.</div>
+  </footer>
+
 </body>
 
 </html>
